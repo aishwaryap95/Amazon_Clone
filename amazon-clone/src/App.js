@@ -11,6 +11,11 @@ function App() {
       <Header />
       <div className="App">
         <Routes>
+        
+          <Route exact path="/login" element={<Home />}></Route>
+        </Routes>
+
+        <Routes>
           <Route exact path="/" element={<Home />}></Route>
         </Routes>
 
