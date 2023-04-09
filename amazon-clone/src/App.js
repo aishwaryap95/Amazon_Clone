@@ -3,16 +3,16 @@ import Header from "./Header";
 import Home from "./Home";
 import Checkout from "./Checkout";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Login from "./Login";
 
 function App() {
   return (
     //BLM
     <Router>
-      <Header />
       <div className="App">
+        <Header />
         <Routes>
-        
-          <Route exact path="/login" element={<Home />}></Route>
+          <Route exact path="/login" element={<Login />}></Route>
         </Routes>
 
         <Routes>
