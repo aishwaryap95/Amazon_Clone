@@ -17,7 +17,14 @@ function Login() {
     e.preventDefault();
 
     //firebase login - email-pswd enabled
-  };
+
+    auth
+       .signInWithEmailAndPassword(email, password)
+       .then(auth => {
+        navigate("/");
+       })
+       .catch(error => alert(error.message))
+  }
 
   const register = (e) => {
     e.preventDefault();
